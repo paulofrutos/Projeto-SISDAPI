@@ -1,0 +1,27 @@
+.container {
+    display: grid;
+    row-gap: 15px;
+}
+
+.home .title {
+    font-size: 3rem;
+    font-weight: 300;
+    line-height: 1.2;
+}
+
+.home .subtitle {
+    font-size: 1.1rem;
+}
+
+.home-img {
+    display: grid;
+    align-items: center;
+    justify-content: center;
+}
+
+.home-img img {
+    margin: 0;
+    padding: 0;
+    max-width: 20vw;
+    align-content: center;
+}
