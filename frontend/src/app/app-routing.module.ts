@@ -14,12 +14,12 @@ const routes: Routes = [
     component: HomeComponent
   },
   {
-    path: 'alunos',
+    path: 'students',
     component: StudentCrudComponent
   },
   {
-    path: 'alunos/cadastrar',
-    component:StudentCreateComponent
+    path: 'students/create',
+    component: StudentCreateComponent
   },
   {
     path: 'turmas',

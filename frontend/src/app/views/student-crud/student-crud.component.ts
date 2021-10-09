@@ -14,7 +14,7 @@ export class StudentCrudComponent implements OnInit {
   }
 
   navigateToStudentCreate(): void {
-    this.router.navigate(['alunos/cadastrar']);
+    this.router.navigate(['/students/create']);
   }
 
 }

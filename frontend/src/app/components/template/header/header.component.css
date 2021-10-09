@@ -1,14 +1,14 @@
 .header {
     display: flex;
     align-items: center;
-    height: 10vh;
+    height: 65px;
 }
 
 .header a {
     display: flex;
     align-items: center;
     text-decoration: none;
-    color: #3b3b3b;
+    color: white;
 }
 
 .header a h1 {
