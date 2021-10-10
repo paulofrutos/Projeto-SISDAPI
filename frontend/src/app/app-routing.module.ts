@@ -22,11 +22,15 @@ const routes: Routes = [
     component: StudentCreateComponent
   },
   {
-    path: 'turmas',
+    path: 'classes',
     component: ClassCrudComponent
   },
   {
-    path: 'pesquisa',
+    path: 'classes/create',
+    component: ClassCrudComponent
+  },
+  {
+    path: 'search',
     component: SearchComponent
   }
 ];

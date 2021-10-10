@@ -25,6 +25,7 @@ import { MatFormFieldModule } from '@angular/material/form-field';
 import { MatInputModule } from '@angular/material/input';
 
 import { HttpClientModule } from '@angular/common/http';
+import { ClassCreateComponent } from './views/class-crud/class-create/class-create.component';
 
 @NgModule({
   
@@ -37,7 +38,8 @@ import { HttpClientModule } from '@angular/common/http';
     StudentCrudComponent,
     ClassCrudComponent,
     SearchComponent,
-    StudentCreateComponent
+    StudentCreateComponent,
+    ClassCreateComponent
   ],
 
   imports: [
