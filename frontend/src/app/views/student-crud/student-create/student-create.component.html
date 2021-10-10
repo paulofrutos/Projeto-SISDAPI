@@ -1,7 +1,18 @@
-<button mat-raised-button (click)="createStudent()" color="primary">
-    Salvar
-</button>
+<mat-card>
 
-<button mat-raised-button (click)="cancel()">
-    Cancelar
-</button>
+    <mat-card-title> Novo Aluno </mat-card-title>
+    <form>
+        <mat-form-field appearance="outline">
+            <input matInput placeholder="Nome" [(ngModel)]="student.nome" name="nome">
+        </mat-form-field>
+        <mat-form-field appearance="outline">
+            <input matInput placeholder="Sobrenome" [(ngModel)]="student.sobrenome" name="sobrenome">
+        </mat-form-field>
+    </form>
+
+    <button mat-raised-button (click)="createStudent()" color="primary"> Salvar </button>
+    <button mat-raised-button (click)="cancel()" color="warn"> Cancelar </button>
+
+</mat-card>
+
+
