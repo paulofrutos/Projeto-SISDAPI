@@ -1,1 +1,19 @@
-<p>class-create works!</p>
+<mat-card>
+
+    <mat-card-title> Nova Turma </mat-card-title>
+    <form>
+        <mat-form-field appearance="outline">
+            <input matInput placeholder="Código da Turma" [(ngModel)]="classes.codigo" name="codigo">
+        </mat-form-field>
+        <mat-form-field appearance="outline">
+            <input matInput placeholder="Nome da Turma" [(ngModel)]="classes.nome" name="nome">
+        </mat-form-field>
+        <mat-form-field appearance="outline">
+            <input matInput placeholder="Nome do Professor" [(ngModel)]="classes.professor" name="professor">
+        </mat-form-field>
+    </form>
+
+    <button mat-raised-button (click)="createClass()" color="primary"> Salvar </button>
+    <button mat-raised-button (click)="cancel()" color="warn"> Cancelar </button>
+
+</mat-card>

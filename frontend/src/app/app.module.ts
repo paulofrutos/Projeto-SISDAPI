@@ -10,9 +10,10 @@ import { FooterComponent } from './components/template/footer/footer.component';
 import { NavComponent } from './components/template/nav/nav.component';
 import { HomeComponent } from './views/home/home.component';
 import { StudentCrudComponent } from './views/student-crud/student-crud.component';
-import { ClassCrudComponent } from './views/class-crud/class-crud.component';
-import { SearchComponent } from './views/search/search.component';
 import { StudentCreateComponent } from './views/student-crud/student-create/student-create.component';
+import { ClassCrudComponent } from './views/class-crud/class-crud.component';
+import { ClassCreateComponent } from './views/class-crud/class-create/class-create.component';
+import { SearchComponent } from './views/search/search.component';
 
 import { MatToolbarModule } from '@angular/material/toolbar';
 import { MatSidenavModule } from '@angular/material/sidenav';
@@ -25,7 +26,8 @@ import { MatFormFieldModule } from '@angular/material/form-field';
 import { MatInputModule } from '@angular/material/input';
 
 import { HttpClientModule } from '@angular/common/http';
-import { ClassCreateComponent } from './views/class-crud/class-create/class-create.component';
+
+import { CrudService } from 'src/app/services/crud.service';
 
 @NgModule({
   
@@ -36,10 +38,10 @@ import { ClassCreateComponent } from './views/class-crud/class-create/class-crea
     NavComponent,
     HomeComponent,
     StudentCrudComponent,
-    ClassCrudComponent,
-    SearchComponent,
     StudentCreateComponent,
-    ClassCreateComponent
+    ClassCrudComponent,
+    ClassCreateComponent,
+    SearchComponent
   ],
 
   imports: [
@@ -63,7 +65,7 @@ import { ClassCreateComponent } from './views/class-crud/class-create/class-crea
 
   ],
 
-  providers: [],
+  providers: [CrudService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
