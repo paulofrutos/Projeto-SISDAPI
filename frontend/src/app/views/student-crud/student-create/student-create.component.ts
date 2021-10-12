@@ -10,15 +10,16 @@ import { CrudService } from 'src/app/services/crud.service';
 })
 export class StudentCreateComponent implements OnInit {
 
+
   student: Student = {
     nome: '',
     sobrenome: ''
-  }
+  };
 
   constructor(private crudService: CrudService,
               private router: Router) { }
 
-  ngOnInit(): void { }
+  ngOnInit() { } 
 
   createStudent(): void {
     this.crudService.createStudent(this.student).subscribe(() => {

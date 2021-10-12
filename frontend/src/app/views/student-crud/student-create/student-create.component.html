@@ -1,7 +1,9 @@
+
 <mat-card>
 
     <mat-card-title> Novo Aluno </mat-card-title>
-    <form>
+    
+    <form>    
         <mat-form-field appearance="outline">
             <input matInput placeholder="Nome" [(ngModel)]="student.nome" name="nome">
         </mat-form-field>
@@ -12,7 +14,5 @@
 
     <button mat-raised-button (click)="createStudent()" color="primary"> Salvar </button>
     <button mat-raised-button (click)="cancel()" color="warn"> Cancelar </button>
-
+       
 </mat-card>
-
-
