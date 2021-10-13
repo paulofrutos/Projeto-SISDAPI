@@ -1,4 +1,6 @@
+import { CrudService } from 'src/app/services/crud.service';
 import { Component, OnInit } from '@angular/core';
+import { Class } from 'src/app/Models/class.model';
 
 @Component({
   selector: 'app-class-read',
@@ -7,9 +9,15 @@ import { Component, OnInit } from '@angular/core';
 })
 export class ClassReadComponent implements OnInit {
 
-  constructor() { }
+  classes: Class[] = [];
+
+  constructor(private crudService: CrudService) { }
 
   ngOnInit(): void {
+    this.crudService.readClass().subscribe( classes => {
+      this.classes = classes;
+      console.log(classes)
+    })
   }
 
 }

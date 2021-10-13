@@ -24,13 +24,27 @@ export class CrudService {
     })
   }
 
+  // ============================== Student Methods ============================== //
+
   createStudent(student: Student): Observable<Student> {
     return this.http.post<Student>(this.studentUrl, student)
   };
 
+  readStudent(): Observable<Student[]> {
+    return this.http.get<Student[]>(this.studentUrl)
+  }
+
+
+  // ============================== Class Methods ============================== //
+
   createClass(classes: Class): Observable<Class> {
     return this.http.post<Class>(this.classUrl, classes)
   }
+
+  readClass(): Observable<Class[]> {
+    return this.http.get<Class[]>(this.classUrl)
+  }
+  
 
 
 }
