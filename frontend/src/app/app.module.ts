@@ -28,6 +28,7 @@ import { MatInputModule } from '@angular/material/input';
 import { HttpClientModule } from '@angular/common/http';
 
 import { CrudService } from 'src/app/services/crud.service';
+import { StudentReadComponent } from './views/student-crud/student-read/student-read.component';
 
 @NgModule({
   
@@ -41,7 +42,8 @@ import { CrudService } from 'src/app/services/crud.service';
     StudentCreateComponent,
     ClassCrudComponent,
     ClassCreateComponent,
-    SearchComponent
+    SearchComponent,
+    StudentReadComponent
   ],
 
   imports: [

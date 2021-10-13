@@ -4,6 +4,7 @@ import { RouterModule, Routes } from '@angular/router';
 import { HomeComponent } from './views/home/home.component';
 import { StudentCrudComponent } from './views/student-crud/student-crud.component';
 import { StudentCreateComponent } from './views/student-crud/student-create/student-create.component';
+import { StudentReadComponent } from './views/student-crud/student-read/student-read.component';
 import { ClassCrudComponent } from './views/class-crud/class-crud.component';
 import { ClassCreateComponent } from './views/class-crud/class-create/class-create.component';
 import { SearchComponent } from './views/search/search.component';
@@ -21,6 +22,10 @@ const routes: Routes = [
   {
     path: 'students/create',
     component: StudentCreateComponent
+  },
+  {
+    path: 'students/read',
+    component: StudentReadComponent
   },
   {
     path: 'classes',
