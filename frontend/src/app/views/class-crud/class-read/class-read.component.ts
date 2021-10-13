@@ -2,6 +2,7 @@ import { CrudService } from 'src/app/services/crud.service';
 import { Component, OnInit } from '@angular/core';
 import { Class } from 'src/app/Models/class.model';
 
+
 @Component({
   selector: 'app-class-read',
   templateUrl: './class-read.component.html',
@@ -10,6 +11,7 @@ import { Class } from 'src/app/Models/class.model';
 export class ClassReadComponent implements OnInit {
 
   classes: Class[] = [];
+  displayedColumns = ['id' , 'nome' , 'professor'];
 
   constructor(private crudService: CrudService) { }
 

@@ -1,4 +1,4 @@
-import { NgModule } from '@angular/core';
+import { LOCALE_ID, NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 
 import { AppRoutingModule } from './app-routing.module';
@@ -24,12 +24,19 @@ import { MatSnackBarModule } from '@angular/material/snack-bar';
 import { FormsModule } from '@angular/forms';
 import { MatFormFieldModule } from '@angular/material/form-field';
 import { MatInputModule } from '@angular/material/input';
+import { MatTableModule } from '@angular/material/table';
+import { MatSortModule } from '@angular/material/sort';
 
 import { HttpClientModule } from '@angular/common/http';
 
-import { CrudService } from 'src/app/services/crud.service';
 import { StudentReadComponent } from './views/student-crud/student-read/student-read.component';
 import { ClassReadComponent } from './views/class-crud/class-read/class-read.component';
+
+import localePt from '@angular/common/locales/pt';
+import { registerLocaleData } from '@angular/common';
+
+registerLocaleData(localePt);
+
 
 @NgModule({
   
@@ -63,13 +70,16 @@ import { ClassReadComponent } from './views/class-crud/class-read/class-read.com
     FormsModule,
     MatFormFieldModule,
     MatInputModule,
+    MatSortModule,
+    MatTableModule,
 
     // ==================== Http Client Module ==================== //
     HttpClientModule
 
   ],
 
-  providers: [CrudService],
+  providers: [{ provide: LOCALE_ID, useValue: 'pt-BR' }],
   bootstrap: [AppComponent]
 })
+
 export class AppModule { }
