@@ -7,6 +7,7 @@ import { StudentCreateComponent } from './views/student-crud/student-create/stud
 import { StudentReadComponent } from './views/student-crud/student-read/student-read.component';
 import { ClassCrudComponent } from './views/class-crud/class-crud.component';
 import { ClassCreateComponent } from './views/class-crud/class-create/class-create.component';
+import { ClassReadComponent } from './views/class-crud/class-read/class-read.component';
 import { SearchComponent } from './views/search/search.component';
 
 
@@ -34,6 +35,10 @@ const routes: Routes = [
   {
     path: 'classes/create',
     component: ClassCreateComponent
+  },
+  {
+    path: 'classes/read',
+    component: ClassReadComponent
   },
   {
     path: 'search',

@@ -29,6 +29,7 @@ import { HttpClientModule } from '@angular/common/http';
 
 import { CrudService } from 'src/app/services/crud.service';
 import { StudentReadComponent } from './views/student-crud/student-read/student-read.component';
+import { ClassReadComponent } from './views/class-crud/class-read/class-read.component';
 
 @NgModule({
   
@@ -43,7 +44,8 @@ import { StudentReadComponent } from './views/student-crud/student-read/student-
     ClassCrudComponent,
     ClassCreateComponent,
     SearchComponent,
-    StudentReadComponent
+    StudentReadComponent,
+    ClassReadComponent
   ],
 
   imports: [
