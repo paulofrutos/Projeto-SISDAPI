@@ -34,6 +34,15 @@ export class CrudService {
     return this.http.get<Student[]>(this.studentUrl)
   }
 
+  readStudentById(id: String): Observable<Student> {
+    const url = `${this.studentUrl}/${id}`
+    return this.http.get<Student>(url);
+  }
+
+  updateStudent(student: Student): Observable<Student> {
+    const url = `${this.studentUrl}/${student.id}`
+    return this.http.put<Student>(url , student);
+  }
 
   // ============================== Class Methods ============================== //
 
@@ -45,6 +54,14 @@ export class CrudService {
     return this.http.get<Class[]>(this.classUrl)
   }
   
+  readClassById(id: String): Observable<Class> {
+    const url = `${this.classUrl}/${id}`
+    return this.http.get<Class>(url);
+  }
 
+  updateClass(classes: Class): Observable<Class> {
+    const url = `${this.classUrl}/${classes.id}`
+    return this.http.put<Class>(url , classes);
+  }
 
 }

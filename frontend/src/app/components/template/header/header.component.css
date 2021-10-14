@@ -1,5 +1,6 @@
 .header {
     display: flex;
+    background-color: #4b5320;
     align-items: center;
     height: 65px;
 }

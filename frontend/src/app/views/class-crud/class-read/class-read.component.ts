@@ -11,7 +11,7 @@ import { Class } from 'src/app/Models/class.model';
 export class ClassReadComponent implements OnInit {
 
   classes: Class[] = [];
-  displayedColumns = ['id' , 'nome' , 'professor'];
+  displayedColumns = ['id' , 'nome' , 'professor' , 'action'];
 
   constructor(private crudService: CrudService) { }
 
