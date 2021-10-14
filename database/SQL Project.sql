@@ -1,6 +1,6 @@
-create database projeto_entra21;
+create database projeto;
 
-use projeto_entra21;
+use projeto;
 
 create table aluno(
 idAluno          int not null auto_increment primary key,
