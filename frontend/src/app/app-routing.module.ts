@@ -1,3 +1,5 @@
+import { ClassUpdateComponent } from './views/class-crud/class-update/class-update.component';
+import { StudentUpdateComponent } from './views/student-crud/student-update/student-update.component';
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
 
@@ -29,6 +31,10 @@ const routes: Routes = [
     component: StudentReadComponent
   },
   {
+    path: 'students/update/:id',
+    component: StudentUpdateComponent
+  },
+  {
     path: 'classes',
     component: ClassCrudComponent
   },
@@ -39,6 +45,10 @@ const routes: Routes = [
   {
     path: 'classes/read',
     component: ClassReadComponent
+  },
+  {
+    path: 'classes/update/:id',
+    component: ClassUpdateComponent
   },
   {
     path: 'search',

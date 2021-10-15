@@ -13,7 +13,6 @@ export class ClassCreateComponent implements OnInit {
 
   public classes: Class = {
     professor: '',
-    codigo: '',
     nome: ''
   }
 

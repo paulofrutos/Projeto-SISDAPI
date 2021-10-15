@@ -1,9 +1,29 @@
+.wrapper {
+    display: flex;
+    flex-direction: column;
+    row-gap: 10px;
+}
+
+.title {
+    margin-bottom: 20px;
+}
+
 form {
     display: flex;
     flex-direction: column;
-    margin-top: 20px;
+
 }
 
 button {
-    margin: 20px 15px 0px 0px;
+    margin: 10px 15px 0px 0px;
+}
+
+.identidade {
+    display: flex;
+    column-gap: 3vh;
+}
+
+.telefones {
+    display: flex;
+    column-gap: 3vh;
 }

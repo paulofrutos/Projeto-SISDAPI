@@ -11,8 +11,10 @@ import { NavComponent } from './components/template/nav/nav.component';
 import { HomeComponent } from './views/home/home.component';
 import { StudentCrudComponent } from './views/student-crud/student-crud.component';
 import { StudentCreateComponent } from './views/student-crud/student-create/student-create.component';
+import { StudentUpdateComponent } from './views/student-crud/student-update/student-update.component';
 import { ClassCrudComponent } from './views/class-crud/class-crud.component';
 import { ClassCreateComponent } from './views/class-crud/class-create/class-create.component';
+import { ClassUpdateComponent } from './views/class-crud/class-update/class-update.component';
 import { SearchComponent } from './views/search/search.component';
 
 import { MatToolbarModule } from '@angular/material/toolbar';
@@ -52,7 +54,9 @@ registerLocaleData(localePt);
     ClassCreateComponent,
     SearchComponent,
     StudentReadComponent,
-    ClassReadComponent
+    ClassReadComponent,
+    ClassUpdateComponent,
+    StudentUpdateComponent
   ],
 
   imports: [

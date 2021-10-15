@@ -8,22 +8,22 @@
         </ng-container>
 
         <!-------------------- Name Column -------------------->
-        <ng-container matColumnDef="nome">
+        <ng-container matColumnDef="nomeCompleto">
             <th mat-header-cell *matHeaderCellDef> Nome </th>
-            <td mat-cell *matCellDef="let row"> {{ row.nome }} </td>
+            <td mat-cell *matCellDef="let row"> {{ row.nomeCompleto }} </td>
         </ng-container>
 
         <!-------------------- CPF Column -------------------->
-        <ng-container matColumnDef="sobrenome">
-            <th mat-header-cell *matHeaderCellDef> Sobrenome </th>
-            <td mat-cell *matCellDef="let row"> {{ row.sobrenome }} </td>
+        <ng-container matColumnDef="cpf">
+            <th mat-header-cell *matHeaderCellDef> CPF </th>
+            <td mat-cell *matCellDef="let row"> {{ row.cpf }} </td>
         </ng-container>
 
         <!-------------------- Action Column -------------------->
         <ng-container matColumnDef="action" class="action">
             <th mat-header-cell *matHeaderCellDef> Ações </th>
             <td mat-cell *matCellDef="let row">
-                <a routerLink="" class="edit">
+                <a routerLink="/students/update/{{ row.id }}" class="edit">
                     <i class="material-icons">
                         edit       
                     </i>

@@ -12,8 +12,23 @@ export class StudentCreateComponent implements OnInit {
 
 
   student: Student = {
-    nome: '',
-    sobrenome: ''
+    nomeCompleto: '',
+    cpf: '',
+    identidade: '',
+    emissaoDaIdentidade: '',
+    orgaoExpedidorDaIdentidade: '',
+    dataDeNascimento: '',
+    idade: 0,
+    cidadeDeNascimento: '',
+    estadoDeNascimento: '',
+    nomeDoPai: '',
+    nomeDaMae: '',
+    religiao: '',
+    tipoSanguineo: '',
+    numeroCelular: '',
+    numeroResidencial: '',
+    numeroDeFamiliar: '',
+    email: ''
   };
 
   constructor(private crudService: CrudService,
