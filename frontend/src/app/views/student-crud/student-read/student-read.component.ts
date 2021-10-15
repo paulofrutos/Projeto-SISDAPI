@@ -11,14 +11,13 @@ import { Student } from 'src/app/Models/student.model';
 export class StudentReadComponent implements OnInit {
 
   students: Student[] = [];
-  displayedColumns = ['id' , 'nome' , 'cpf' , 'action'];
+  displayedColumns = ['id' , 'nomeCompleto' , 'cpf' , 'action'];
 
   constructor(private crudService: CrudService) { }
 
   ngOnInit(): void {
     this.crudService.readStudent().subscribe( students => {
       this.students = students;
-
     })
   }
 

@@ -27,3 +27,8 @@ button {
     display: flex;
     column-gap: 3vh;
 }
+
+.outros {
+    display: flex;
+    column-gap: 3vh;
+}

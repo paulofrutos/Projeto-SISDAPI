@@ -20,7 +20,18 @@ export interface Student {
     numeroDeFamiliar: String
     email: String
 
+    cep: String
+    rua: String
+    bairro: String
+    cidade: String
+    estado: String
 
+    grauDeFormacao: String
+    anoDeConclusao: String
+    nomeDaEscola: String
 
+    profissaoDoPai: String
+    profissaoDaMae: String
+    rendaFamiliar: String
 
 }
