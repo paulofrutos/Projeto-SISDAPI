@@ -36,6 +36,8 @@ import { ClassReadComponent } from './views/class-crud/class-read/class-read.com
 
 import localePt from '@angular/common/locales/pt';
 import { registerLocaleData } from '@angular/common';
+import { StudentDeleteComponent } from './views/student-crud/student-delete/student-delete.component';
+import { ClassDeleteComponent } from './views/class-crud/class-delete/class-delete.component';
 
 registerLocaleData(localePt);
 
@@ -56,7 +58,9 @@ registerLocaleData(localePt);
     StudentReadComponent,
     ClassReadComponent,
     ClassUpdateComponent,
-    StudentUpdateComponent
+    StudentUpdateComponent,
+    StudentDeleteComponent,
+    ClassDeleteComponent
   ],
 
   imports: [

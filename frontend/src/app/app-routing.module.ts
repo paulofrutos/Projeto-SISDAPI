@@ -1,3 +1,5 @@
+import { StudentDeleteComponent } from './views/student-crud/student-delete/student-delete.component';
+import { ClassDeleteComponent } from './views/class-crud/class-delete/class-delete.component';
 import { ClassUpdateComponent } from './views/class-crud/class-update/class-update.component';
 import { StudentUpdateComponent } from './views/student-crud/student-update/student-update.component';
 import { NgModule } from '@angular/core';
@@ -35,6 +37,10 @@ const routes: Routes = [
     component: StudentUpdateComponent
   },
   {
+    path: 'students/delete/:id',
+    component: StudentDeleteComponent
+  },
+  {
     path: 'classes',
     component: ClassCrudComponent
   },
@@ -49,6 +55,10 @@ const routes: Routes = [
   {
     path: 'classes/update/:id',
     component: ClassUpdateComponent
+  },
+  {
+    path: 'classes/delete/:id',
+    component: ClassDeleteComponent
   },
   {
     path: 'search',

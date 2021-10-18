@@ -44,6 +44,11 @@ export class CrudService {
     return this.http.put<Student>(url , student);
   }
 
+  deleteStudent(id: string): Observable<Student> {
+    const url = `${this.studentUrl}/${id}`;
+    return this.http.delete<Student>(url);
+  }
+
   // ============================== Class Methods ============================== //
 
   createClass(classes: Class): Observable<Class> {
@@ -62,6 +67,11 @@ export class CrudService {
   updateClass(classes: Class): Observable<Class> {
     const url = `${this.classUrl}/${classes.id}`
     return this.http.put<Class>(url , classes);
+  }
+
+  deleteClass(classes: Class): Observable<Class> {
+    const url = `${this.classUrl}/${classes.id}`;
+    return this.http.delete<Class>(url);
   }
 
 }
