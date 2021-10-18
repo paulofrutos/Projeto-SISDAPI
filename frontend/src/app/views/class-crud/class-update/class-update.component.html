@@ -1,1 +1,16 @@
-<p>class-update works!</p>
+<mat-card>
+
+    <mat-card-title> Alterar Turma </mat-card-title>
+    <form>
+        <mat-form-field appearance="outline">
+            <input matInput placeholder="Nome da Turma" [(ngModel)]="classes.nome" name="nome">
+        </mat-form-field>
+        <mat-form-field appearance="outline">
+            <input matInput placeholder="Nome do Professor" [(ngModel)]="classes.professor" name="professor">
+        </mat-form-field>
+    </form>
+
+    <button mat-raised-button (click)="updateClass()" color="primary"> Salvar </button>
+    <button mat-raised-button (click)="cancel()" color="warn"> Cancelar </button>
+
+</mat-card>
