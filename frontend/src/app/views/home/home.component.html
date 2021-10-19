@@ -6,8 +6,21 @@
         <mat-card-subtitle class="subtitle">
             Sistema de cadastro de alunos.
         </mat-card-subtitle>
+        <mat-card-content class="home-img">
+            <img mat-card-image src="assets/img/logo.png" alt="Logo">
+        </mat-card-content>
     </mat-card>
-    <mat-card class="home-img mat-elevation-z3">
-        <img mat-card-image src="assets/img/logo.png" alt="Logo">
+    <mat-card class="mat-elevation-z3 buttons">
+        <button mat-raised-button routerLink="/students/create" color="primary">
+            Cadastrar Aluno
+        </button>
+        <button mat-raised-button routerLink="/classes/create" color="primary">
+            Cadastrar Turma
+        </button>
+        <button mat-raised-button routerLink="/search" color="primary">
+            Pesquisar
+        </button>
     </mat-card>
 </mat-card-content>
+
+<app-footer></app-footer>

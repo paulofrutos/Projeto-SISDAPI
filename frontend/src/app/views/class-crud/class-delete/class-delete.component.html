@@ -1,5 +1,4 @@
 <mat-card>
-
     <mat-card-title> Excluir Turma </mat-card-title>
     <form>
         <mat-form-field appearance="outline">
@@ -9,8 +8,6 @@
             <input matInput placeholder="Nome do Professor" [value]="classes.professor" name="professor" disabled>
         </mat-form-field>
     </form>
-
     <button mat-raised-button (click)="deleteClass()" color="warn"> Excluir </button>
     <button mat-raised-button (click)="cancel()"> Cancelar </button>
-
 </mat-card>

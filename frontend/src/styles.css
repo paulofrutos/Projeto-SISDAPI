@@ -1,7 +1,8 @@
 /* You can add global styles to this file, and also import other style files */
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@300;400&display=swap');
 
-html, body { height: 100%; }
-body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
+html, body { margin: 0; padding: 0; box-sizing: border-box; height: 100%; }
+body { font-family: Lato, Roboto, sans-serif; }
 
 .msg-success {
     background-color: #28a745;

@@ -1,17 +1,21 @@
-.sidenav {
-    background-color: #212121;
-    width: 10vw;
+.nav-list {
+    display: flex;
+    column-gap: 2vw;
+    align-items: center;
+    justify-content: center;
+    padding-right: 2vw;
 }
 
-.sidenav .nav-list a {
+.nav-list a {
     color: white;
+    align-items: center;
+
 }
 
-.sidenav .nav-list a i {
+.nav-list a i {
     padding-right: 8px;
 }
 
 .content {
     padding: 16px;
-    background-color: white;
 }

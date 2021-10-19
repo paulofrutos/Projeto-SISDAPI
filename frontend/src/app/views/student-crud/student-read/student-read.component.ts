@@ -1,7 +1,7 @@
+import { MatTableDataSource } from '@angular/material/table';
 import { CrudService } from 'src/app/services/crud.service';
 import { Component, OnInit, ViewChild } from '@angular/core';
 import { Student } from 'src/app/Models/student.model';
-
 
 @Component({
   selector: 'app-student-read',
@@ -12,13 +12,18 @@ export class StudentReadComponent implements OnInit {
 
   students: Student[] = [];
   displayedColumns = ['id' , 'nomeCompleto' , 'cpf' , 'action'];
+  dataSource!: MatTableDataSource<any>;
 
   constructor(private crudService: CrudService) { }
 
   ngOnInit(): void {
-    this.crudService.readStudent().subscribe( students => {
-      this.students = students;
+    this.crudService.readStudent().subscribe( (response:any) => {
+      this.dataSource = new MatTableDataSource(response);
     })
+  }
+
+  filterData($event: any): void {
+    this.dataSource.filter = $event.target.value;
   }
 
 }

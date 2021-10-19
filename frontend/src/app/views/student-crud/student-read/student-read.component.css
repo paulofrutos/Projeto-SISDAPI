@@ -1,5 +1,15 @@
+.search {
+    margin-top: 0px;
+    height: 70%;
+}
+
 table {
     width: 100%;
+}
+
+th {
+    color: #353535;
+    font-weight: 600;
 }
 
 .edit {
