@@ -1,1 +1,153 @@
-<p>student-delete works!</p>
+<mat-card class="wrapper mat-elevation-z8">
+    <mat-card-title class="title"> Excluir Aluno </mat-card-title>
+    <mat-card class="mat-elevation-z4">
+        <mat-card-subtitle> Dados Pessoais </mat-card-subtitle>
+        <form>    
+            <mat-form-field appearance="outline">
+                <input matInput placeholder="Nome Completo" [(ngModel)]="student.nomeCompleto" name="nomeCompleto">
+            </mat-form-field>
+            
+            <div class="identidade">
+                <mat-form-field appearance="outline">
+                    <input matInput placeholder="CPF" [(ngModel)]="student.cpf" name="cpf">
+                </mat-form-field>
+                <mat-form-field appearance="outline">
+                    <input matInput placeholder="Identidade" [(ngModel)]="student.identidade" name="identidade">
+                </mat-form-field>
+                <mat-form-field appearance="outline">
+                    <input matInput placeholder="Data da Expedição" [(ngModel)]="student.emissaoDaIdentidade" name="emissaoDaIdentidade">
+                </mat-form-field>
+                <mat-form-field appearance="outline">
+                    <input matInput placeholder="Órgão Expedidor da Id" [(ngModel)]="student.orgaoExpedidorDaIdentidade" name="orgaoExpedidorDaIdentidade">
+                </mat-form-field>
+            </div>
+            <div class="identidade">
+                <mat-form-field appearance="outline">
+                    <input matInput placeholder="Data de Nascimento" [(ngModel)]="student.dataDeNascimento" name="dataDeNascimento">
+                </mat-form-field>
+                <mat-form-field appearance="outline">
+                    <input matInput placeholder="Idade" [(ngModel)]="student.idade" name="idade">
+                </mat-form-field>
+                <mat-form-field appearance="outline">
+                    <input matInput placeholder="Cidade de Nascimento" [(ngModel)]="student.cidadeDeNascimento" name="cidadeDeNascimento">
+                </mat-form-field>
+                <mat-form-field appearance="outline">
+                    <input matInput placeholder="Estado de Nascimento" [(ngModel)]="student.estadoDeNascimento" name="estadoDeNascimento">
+                </mat-form-field>
+            </div>
+            <mat-form-field appearance="outline">
+                <input matInput placeholder="Nome do pai" [(ngModel)]="student.nomeDoPai" name="nomeDoPai">
+            </mat-form-field>
+            <mat-form-field appearance="outline">
+                <input matInput placeholder="Nome da mãe" [(ngModel)]="student.nomeDaMae" name="nomeDaMae">
+            </mat-form-field>
+            <div class="outros">
+                <mat-form-field appearance="outline">
+                    <input matInput placeholder="Religião" [(ngModel)]="student.religiao" name="religiao">
+                </mat-form-field>
+                <mat-form-field appearance="outline">
+                    <input matInput placeholder="Tipo Sanguíneo" [(ngModel)]="student.tipoSanguineo" name="tipoSanguineo">
+                </mat-form-field>
+            </div>
+        </form>
+    </mat-card>
+
+    <mat-card class="mat-elevation-z4">
+        <mat-card-subtitle> Contato </mat-card-subtitle>
+        <form>
+            <div class="telefones">
+                <mat-form-field appearance="outline">
+                    <input matInput placeholder="Número do Celular" [(ngModel)]="student.numeroCelular" name="numeroCelular">
+                </mat-form-field>
+                <mat-form-field appearance="outline">
+                    <input matInput placeholder="Número Residencial" [(ngModel)]="student.numeroResidencial" name="numeroResidencial">
+                </mat-form-field>
+                <mat-form-field appearance="outline">
+                    <input matInput placeholder="Número De Familiar" [(ngModel)]="student.numeroDeFamiliar" name="numeroDeFamiliar">
+                </mat-form-field>
+            </div>
+            <mat-form-field appearance="outline">
+                <input matInput placeholder="E-mail" [(ngModel)]="student.email" name="email">
+            </mat-form-field>
+            
+        </form>
+    </mat-card>
+
+    <mat-card class="mat-elevation-z4">
+        <mat-card-subtitle> Endereço </mat-card-subtitle>
+        <form>
+            <div class="telefones">
+                <mat-form-field appearance="outline">
+                    <input matInput placeholder="CEP" [(ngModel)]="student.cep" name="cep">
+                </mat-form-field>
+                <mat-form-field appearance="outline">
+                    <input matInput placeholder="Rua" [(ngModel)]="student.rua" name="rua">
+                </mat-form-field>
+            </div>
+            <div>
+                <mat-form-field appearance="outline">
+                    <input matInput placeholder="Bairro" [(ngModel)]="student.bairro" name="bairro">
+                </mat-form-field>
+                <mat-form-field appearance="outline">
+                    <input matInput placeholder="Cidade" [(ngModel)]="student.cidade" name="cidade">
+                </mat-form-field>
+                <mat-form-field appearance="outline">
+                    <input matInput placeholder="Estado" [(ngModel)]="student.estado" name="estado">
+                </mat-form-field>
+            </div>
+        </form>
+    </mat-card>
+
+    <mat-card class="mat-elevation-z4">
+        <mat-card-subtitle> Escolaridade </mat-card-subtitle>
+        <form>
+            <div class="escolaridade">
+                <mat-form-field appearance="outline">
+                    <input matInput placeholder="Grau de formação" [(ngModel)]="student.grauDeFormacao" name="grauDeFormacao">
+                </mat-form-field>
+                <mat-form-field appearance="outline">
+                    <input matInput placeholder="Ano de Conclusão" [(ngModel)]="student.anoDeConclusao" name="anoDeConlusao">
+                </mat-form-field>
+            </div>
+            <mat-form-field appearance="outline">
+                <input matInput placeholder="Nome da Escola" [(ngModel)]="student.nomeDaEscola" name="nomeDaEscola">
+            </mat-form-field>
+        </form>
+    </mat-card>
+
+    <mat-card class="mat-elevation-z4">
+        <mat-card-subtitle> Renda Familiar </mat-card-subtitle>
+        <form>
+            <div class="escolaridade">
+                <mat-form-field appearance="outline">
+                    <input matInput placeholder="Profissão do Pai" [(ngModel)]="student.profissaoDoPai" name="profissaoDoPai">
+                </mat-form-field>
+                <mat-form-field appearance="outline">
+                    <input matInput placeholder="Profissão da Mae" [(ngModel)]="student.profissaoDaMae" name="profissaoDaMae">
+                </mat-form-field>
+                <mat-form-field appearance="outline">
+                    <input matInput placeholder="Renda Familiar" [(ngModel)]="student.rendaFamiliar" name="rendaFamiliar">
+                </mat-form-field>
+            </div>
+        </form>
+    </mat-card>
+
+    <mat-card class="mat-elevation-z4">
+        <mat-card-subtitle> Turma </mat-card-subtitle>
+        <form>
+            <div class="turma">
+                <mat-form-field appearance="outline">
+                    <input matInput placeholder="Nome da Turma" [(ngModel)]="class.nome" name="nome">
+                </mat-form-field>
+                <mat-form-field appearance="outline">
+                    <input matInput placeholder="Professor" [(ngModel)]="class.professor" name="professor">
+                </mat-form-field>
+            </div>
+        </form>
+    </mat-card>
+
+    <mat-card-content>
+        <button mat-raised-button (click)="deleteStudent()" color="primary"> Excluir </button>
+        <button mat-raised-button (click)="cancel()" color="warn"> Cancelar </button>
+    </mat-card-content>
+</mat-card>
