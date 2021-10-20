@@ -21,8 +21,9 @@ public class SecurityConfig extends WebSecurityConfigurerAdapter {
     @Override
     public void configure(HttpSecurity http) throws Exception {
         http.authorizeRequests()
-                .antMatchers("/aluno").permitAll()
-                .anyRequest().authenticated()
+                .antMatchers("/aluno/").permitAll()
+                .antMatchers("/turma/").permitAll()
+                .anyRequest().permitAll()
                 .and()
                 .httpBasic().and()
                 .sessionManagement().sessionCreationPolicy(SessionCreationPolicy.STATELESS).and()
