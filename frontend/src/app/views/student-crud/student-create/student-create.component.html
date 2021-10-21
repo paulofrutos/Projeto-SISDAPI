@@ -5,17 +5,17 @@
         <form>    
             <mat-form-field appearance="outline">
                 <mat-label>Nome Completo</mat-label>
-                <input matInput placeholder="Nome Completo" [(ngModel)]="student.nomeCompleto" name="nomeCompleto">
+                <input matInput placeholder="Nome Completo" [(ngModel)]="student.nomeCompleto" name="nomeCompleto" required>
             </mat-form-field>
             
             <div class="identidade">
                 <mat-form-field appearance="outline">
                     <mat-label>CPF</mat-label>
-                    <input matInput placeholder="CPF" [(ngModel)]="student.cpf" name="cpf">
+                    <input matInput placeholder="CPF" [(ngModel)]="student.cpf" name="cpf" required>
                 </mat-form-field>
                 <mat-form-field appearance="outline">
                     <mat-label>Identidade</mat-label>
-                    <input matInput placeholder="Identidade" [(ngModel)]="student.identidade" name="identidade">
+                    <input matInput placeholder="Identidade" [(ngModel)]="student.identidade" name="identidade" required>
                 </mat-form-field>
                 <mat-form-field appearance="outline">
                     <mat-label>Data de Expedição</mat-label>
@@ -154,10 +154,10 @@
         <form>
             <div class="turma">
                 <mat-form-field appearance="outline">
-                    <input matInput placeholder="Nome da Turma" [(ngModel)]="class.nome" name="nome">
+                    <input matInput placeholder="Nome da Turma" [(ngModel)]="student.nomeDaTurma" name="nome">
                 </mat-form-field>
                 <mat-form-field appearance="outline">
-                    <input matInput placeholder="Professor" [(ngModel)]="class.professor" name="professor">
+                    <input matInput placeholder="Professor" [(ngModel)]="student.professor" name="professor">
                 </mat-form-field>
             </div>
         </form>

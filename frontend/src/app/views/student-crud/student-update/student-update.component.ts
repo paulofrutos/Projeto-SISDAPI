@@ -18,7 +18,7 @@ export class StudentUpdateComponent implements OnInit {
     emissaoDaIdentidade: '',
     orgaoExpedidorDaIdentidade: '',
     dataDeNascimento: '',
-    idade: 0,
+    idade: '',
     cidadeDeNascimento: '',
     estadoDeNascimento: '',
     nomeDoPai: '',
@@ -39,7 +39,9 @@ export class StudentUpdateComponent implements OnInit {
     nomeDaEscola: '',
     profissaoDoPai: '',
     profissaoDaMae: '',
-    rendaFamiliar: ''
+    rendaFamiliar: '',
+    nomeDaTurma: '',
+    professor: ''
   };
 
   class: Class = {

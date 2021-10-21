@@ -11,7 +11,7 @@ export interface Student {
     dataDeNascimento: String
     cidadeDeNascimento: String
     estadoDeNascimento: String
-    idade: Number
+    idade: String
     religiao: String
     tipoSanguineo: String
 
@@ -34,4 +34,6 @@ export interface Student {
     profissaoDaMae: String
     rendaFamiliar: String
 
+    nomeDaTurma: string
+    professor: string
 }
