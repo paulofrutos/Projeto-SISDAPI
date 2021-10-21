@@ -1,9 +1,10 @@
 .wrapper {
     display: flex;
     flex-direction: column;
+    flex: content;
     row-gap: 10px;
     margin: 2vw;
-}
+} 
 
 .title {
     margin-bottom: 20px;
@@ -16,10 +17,16 @@ form {
 }
 
 button {
-    margin: 10px 15px 0px 0px;
+    width: 7vw;
+    margin: 20px 15px 15px 0px;
 }
 
 .identidade {
+    display: flex;
+    column-gap: 3vh;
+}
+
+.outros {
     display: flex;
     column-gap: 3vh;
 }
@@ -29,7 +36,22 @@ button {
     column-gap: 3vh;
 }
 
-.outros {
+.endereco {
+    display: flex;
+    column-gap: 3vh;
+}
+
+.escolaridade {
+    display: flex;
+    column-gap: 3vh;
+}
+
+.rendaFamiliar {
+    display: flex;
+    column-gap: 3vh;
+}
+
+.turma {
     display: flex;
     column-gap: 3vh;
 }
