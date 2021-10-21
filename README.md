@@ -16,7 +16,8 @@
 - Criação do MER
 - Criação da UML
 - Criação do Banco de Dados
-- Criação da API
+- Criação da API (Back End)
+- Criação do Front End
 
 ### Framework utilizados
 - SpringBoot
@@ -32,6 +33,9 @@
 - SQL
 - Java
 - TypeScript
+- CSS
+- HTML
+- XML
         
 ### Equipe
 ---
