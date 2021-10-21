@@ -1,13 +1,13 @@
 <component name="libraryTable">
   <library name="Maven: org.springframework.boot:spring-boot-starter-tomcat:2.5.6-SNAPSHOT">
     <CLASSES>
-      <root url="jar://$MAVEN_REPOSITORY$/org/springframework/boot/spring-boot-starter-tomcat/2.5.6-SNAPSHOT/spring-boot-starter-tomcat-2.5.6-20211012.235522-21.jar!/" />
+      <root url="jar://$MAVEN_REPOSITORY$/org/springframework/boot/spring-boot-starter-tomcat/2.5.6-SNAPSHOT/spring-boot-starter-tomcat-2.5.6-20211020.073820-39.jar!/" />
     </CLASSES>
     <JAVADOC>
-      <root url="jar://$MAVEN_REPOSITORY$/org/springframework/boot/spring-boot-starter-tomcat/2.5.6-SNAPSHOT/spring-boot-starter-tomcat-2.5.6-20211012.235522-21-javadoc.jar!/" />
+      <root url="jar://$MAVEN_REPOSITORY$/org/springframework/boot/spring-boot-starter-tomcat/2.5.6-SNAPSHOT/spring-boot-starter-tomcat-2.5.6-20211020.073820-39-javadoc.jar!/" />
     </JAVADOC>
     <SOURCES>
-      <root url="jar://$MAVEN_REPOSITORY$/org/springframework/boot/spring-boot-starter-tomcat/2.5.6-SNAPSHOT/spring-boot-starter-tomcat-2.5.6-20211012.235522-21-sources.jar!/" />
+      <root url="jar://$MAVEN_REPOSITORY$/org/springframework/boot/spring-boot-starter-tomcat/2.5.6-SNAPSHOT/spring-boot-starter-tomcat-2.5.6-20211020.073820-39-sources.jar!/" />
     </SOURCES>
   </library>
 </component>
