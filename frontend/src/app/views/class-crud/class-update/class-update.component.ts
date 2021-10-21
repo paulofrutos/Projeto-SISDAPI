@@ -10,10 +10,7 @@ import { CrudService } from 'src/app/services/crud.service';
 })
 export class ClassUpdateComponent implements OnInit {
 
-  public classes: Class = {
-    professor: '',
-    nome: ''
-  }
+  classes!: Class;
 
   constructor(private router: Router,
               private crudService: CrudService,

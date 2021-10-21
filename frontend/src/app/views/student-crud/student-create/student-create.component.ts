@@ -19,7 +19,7 @@ export class StudentCreateComponent implements OnInit {
     emissaoDaIdentidade: '',
     orgaoExpedidorDaIdentidade: '',
     dataDeNascimento: '',
-    idade: 0,
+    idade: '',
     cidadeDeNascimento: '',
     estadoDeNascimento: '',
     nomeDoPai: '',
@@ -40,13 +40,10 @@ export class StudentCreateComponent implements OnInit {
     nomeDaEscola: '',
     profissaoDoPai: '',
     profissaoDaMae: '',
-    rendaFamiliar: ''
-  };
-
-  class: Class = {
-    nome: '',
+    rendaFamiliar: '',
+    nomeDaTurma: '',
     professor: ''
-  }
+  };
 
   constructor(private crudService: CrudService,
               private router: Router) { }
