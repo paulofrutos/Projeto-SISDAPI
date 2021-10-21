@@ -26,6 +26,7 @@
   - Spring JPA
   - H2
 - Maven
+- Hibernate
 - Angular CLI
   - Material Design
 
