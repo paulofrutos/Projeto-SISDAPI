@@ -9,11 +9,8 @@
 .nav-list a {
     color: white;
     align-items: center;
+    font-size: 1.1rem;
 
-}
-
-.nav-list a i {
-    padding-right: 8px;
 }
 
 .content {
