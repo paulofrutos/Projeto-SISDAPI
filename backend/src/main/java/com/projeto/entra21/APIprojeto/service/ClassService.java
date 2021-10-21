@@ -1,6 +1,5 @@
 package com.projeto.entra21.APIprojeto.service;
 
-import com.projeto.entra21.APIprojeto.entity.Student;
 import com.projeto.entra21.APIprojeto.entity.Class;
 import com.projeto.entra21.APIprojeto.repository.ClassRepository;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -13,7 +12,7 @@ import java.util.Optional;
 public class ClassService {
 
     @Autowired
-    private Class repository;
+    private ClassRepository repository;
 
     public List<Class> listClass() {
         return repository.findAll();
@@ -22,8 +21,8 @@ public class ClassService {
     public Class searchById(int id) { return repository.findById(id).orElse(null);
     }
 
-    public Class add(Class Clas){
-        return repository.save(class);
+    public Class add( Class turma){
+        return repository.save(turma);
     }
 
     public void delete(int id) {
@@ -33,10 +32,11 @@ public class ClassService {
         }
     }
 
-    public void update(int id, Class class){
+    public void update(int id, Class turma){
         Class classUpdated = repository.getById(id);
-        classUpdated.setNome(class.getNome());
-        classUpdated.setProfessor(class.getProfessor());
+        classUpdated.setNome(turma.getNome());
+        classUpdated.setProfessor(turma.getProfessor());
         repository.save(classUpdated);
     }
+
 }
