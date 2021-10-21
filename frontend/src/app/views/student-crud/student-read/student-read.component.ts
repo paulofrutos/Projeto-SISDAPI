@@ -1,6 +1,6 @@
 import { MatTableDataSource } from '@angular/material/table';
 import { CrudService } from 'src/app/services/crud.service';
-import { Component, OnInit, ViewChild } from '@angular/core';
+import { Component, OnInit } from '@angular/core';
 import { Student } from 'src/app/Models/student.model';
 
 @Component({

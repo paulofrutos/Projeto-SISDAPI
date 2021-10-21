@@ -12,8 +12,38 @@ import { CrudService } from 'src/app/services/crud.service';
 
 export class StudentDeleteComponent implements OnInit {
 
-  student!: Student;
-  class!: Class;
+  student: Student = {
+    nomeCompleto: '',
+    cpf: '',
+    identidade: '',
+    emissaoDaIdentidade: '',
+    orgaoExpedidorDaIdentidade: '',
+    dataDeNascimento: '',
+    idade: '',
+    cidadeDeNascimento: '',
+    estadoDeNascimento: '',
+    nomeDoPai: '',
+    nomeDaMae: '',
+    religiao: '',
+    tipoSanguineo: '',
+    numeroCelular: '',
+    numeroResidencial: '',
+    numeroDeFamiliar: '',
+    email: '',
+    cep: '',
+    rua: '',
+    bairro: '',
+    cidade: '',
+    estado: '',
+    grauDeFormacao: '',
+    anoDeConclusao: '',
+    nomeDaEscola: '',
+    profissaoDoPai: '',
+    profissaoDaMae: '',
+    rendaFamiliar: '',
+    nomeDaTurma: '',
+    professor: ''
+  };
 
   constructor(private router: Router,
               private crudService: CrudService,

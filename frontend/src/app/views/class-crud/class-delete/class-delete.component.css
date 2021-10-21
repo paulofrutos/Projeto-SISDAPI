@@ -1,5 +1,5 @@
-mat-card {
-    margin: 15px;
+.wrapper {
+    margin: 2vw;
 }
 
 form {
@@ -9,5 +9,6 @@ form {
 }
 
 button {
-    margin: 10px 15px 0px 0px;
+    width: 7vw;
+    margin: 20px 15px 15px 0px;
 }

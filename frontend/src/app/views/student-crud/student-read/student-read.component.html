@@ -1,9 +1,8 @@
 <mat-form-field appearance="fill">
-    <input matInput class="search" placeholder="Search" autocomplete="off" (keyup)="filterData($event)">
+    <input matInput class="search" placeholder="Pesquisaar" autocomplete="off" (keyup)="filterData($event)">
 </mat-form-field>
 
 <div class="mat-elevation-z8">
-
     <table mat-table mat-sort [dataSource]="dataSource">
 
         <!-------------------- Id Column -------------------->

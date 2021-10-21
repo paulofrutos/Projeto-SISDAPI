@@ -11,7 +11,10 @@ import { CrudService } from 'src/app/services/crud.service';
 
 export class ClassCreateComponent implements OnInit {
 
-  classes!: Class;
+  classes: Class = {
+    nome: '',
+    professor: ''
+  };
 
   constructor(private crudService: CrudService,
               private router: Router) { }

@@ -1,12 +1,14 @@
-<mat-card>
+<mat-card class="wrapper mat-elevation-z8">
 
     <mat-card-title> Nova Turma </mat-card-title>
-    <form>
+    <form autocomplete="off">
         <mat-form-field appearance="outline">
-            <input matInput placeholder="Nome da Turma" [(ngModel)]="classes.nome" name="nome">
+            <mat-label>Nome da Turma</mat-label>
+            <input matInput [(ngModel)]="classes.nome" name="nome">
         </mat-form-field>
         <mat-form-field appearance="outline">
-            <input matInput placeholder="Nome do Professor" [(ngModel)]="classes.professor" name="professor">
+            <mat-label>Nome do Professor</mat-label>
+            <input matInput [(ngModel)]="classes.professor" name="professor">
         </mat-form-field>
     </form>
 

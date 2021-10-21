@@ -1,7 +1,8 @@
 .wrapper {
-    margin: 15px;
+    margin: 2vw;
 }
 
 button {
-    margin-bottom: 35px;
+    width: 10vw;
+    margin: 0px 15px 15px 0px;
 }

@@ -1,11 +1,13 @@
-<mat-card>
+<mat-card class="wrapper mat-elevation-z8">
     <mat-card-title> Excluir Turma </mat-card-title>
     <form>
         <mat-form-field appearance="outline">
-            <input matInput placeholder="Nome da Turma" [value]="classes.nome" name="nome" disabled>
+            <mat-label>Nome da Turma</mat-label>
+            <input matInput [(ngModel)]="classes.nome" name="nome">
         </mat-form-field>
         <mat-form-field appearance="outline">
-            <input matInput placeholder="Nome do Professor" [value]="classes.professor" name="professor" disabled>
+            <mat-label>Nome do Professor</mat-label>
+            <input matInput [(ngModel)]="classes.professor" name="professor">
         </mat-form-field>
     </form>
     <button mat-raised-button (click)="deleteClass()" color="warn"> Excluir </button>

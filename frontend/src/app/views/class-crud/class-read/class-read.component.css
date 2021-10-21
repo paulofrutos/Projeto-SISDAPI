@@ -1,11 +1,19 @@
+.search {
+    margin-top: 0px;
+    height: 70%;
+}
+
 table {
     width: 100%;
 }
 
-.edit {
-    margin-right: 5px;
+th {
+    color: #353535;
+    font-weight: 600;
 }
 
-.delete {
-    margin-left: 5px;
+.edit, .delete {
+    margin-right: 5px;
+    text-decoration: none;
+    color: #353535;
 }
