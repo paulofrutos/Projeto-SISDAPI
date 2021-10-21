@@ -31,7 +31,8 @@ public class StudentService {
         studentUpdated.setNomeCompleto(student.getNomeCompleto());
         studentUpdated.setCpf(student.getCpf());
         studentUpdated.setIdentidade(student.getIdentidade());
-        studentUpdated.setDataEmissaoDaIdentidade(student.getDataEmissaoDaIdentidade());
+        studentUpdated.setEstadoDeNascimento(student.getEstadoDeNascimento());
+        studentUpdated.setEmissaoDaIdentidade(student.getEmissaoDaIdentidade());
         studentUpdated.setOrgaoExpedidorDaIdentidade(student.getOrgaoExpedidorDaIdentidade());
         studentUpdated.setNomeDoPai(student.getNomeDoPai());
         studentUpdated.setNomeDaMae(student.getNomeDaMae());
@@ -49,9 +50,9 @@ public class StudentService {
         studentUpdated.setBairro(student.getBairro());
         studentUpdated.setCidade(student.getCidade());
         studentUpdated.setEstado(student.getEstado());
-        studentUpdated.setEnsinoMedioSuperior(student.getEnsinoMedioSuperior());
-        studentUpdated.setAnoDeConclusaoEscola(student.getAnoDeConclusaoEscola());
-        studentUpdated.setEscolaOndeConcluiu(student.getEscolaOndeConcluiu());
+        studentUpdated.setGrauDeFormacao(student.getGrauDeFormacao());
+        studentUpdated.setAnoDeConclusao(student.getAnoDeConclusao());
+        studentUpdated.setNomeDaEscola(student.getNomeDaEscola());
         studentUpdated.setProfissaoDoPai(student.getProfissaoDoPai());
         studentUpdated.setProfissaoDaMae(student.getProfissaoDaMae());
         studentUpdated.setRendaFamiliar(student.getRendaFamiliar());

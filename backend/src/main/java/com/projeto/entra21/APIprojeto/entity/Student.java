@@ -26,8 +26,11 @@ public class Student {
     @Column
     private String identidade;
 
-    @Column
-    private String dataEmissaoDaIdentidade;
+    @Column(name = "estadoDeNascimento")
+    private String estadoDeNascimento;
+
+    @Column(name = "emissaoDaIdentidade")
+    private String emissaoDaIdentidade;
 
     @Column
     private String orgaoExpedidorDaIdentidade;
@@ -81,13 +84,13 @@ public class Student {
     private String estado;
 
     @Column
-    private String ensinoMedioSuperior;
+    private String grauDeFormacao;
 
     @Column
-    private String anoDeConclusaoEscola;
+    private String anoDeConclusao;
 
     @Column
-    private String escolaOndeConcluiu;
+    private String nomeDaEscola;
 
     @Column
     private String profissaoDoPai;

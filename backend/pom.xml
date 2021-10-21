@@ -8,10 +8,10 @@
 		<version>2.5.6-SNAPSHOT</version>
 		<relativePath/> <!-- lookup parent from repository -->
 	</parent>
-	<groupId>com.backexemplo</groupId>
-	<artifactId>back-exemplo</artifactId>
+	<groupId>com.backproject</groupId>
+	<artifactId>back-project</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
-	<name>back-exemplo</name>
+	<name>back-project</name>
 	<description>Backend spring com integração frontend angular</description>
 	<properties>
 		<java.version>11</java.version>
