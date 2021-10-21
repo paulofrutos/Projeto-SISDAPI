@@ -1,8 +1,6 @@
 create database project;
 use project;
 
-select * from student;
-
 create table student(
 id                              int not null auto_increment primary key,
 nomeCompleto    				varchar (100),
@@ -13,7 +11,7 @@ nomeDaMae                       varchar (100),
 dataDeNascimento                varchar (10),
 cidadeDeNascimento              varchar (30),
 estadoDeNascimento              varchar (2),
-dataEmissaoDaIdentidade         varchar (10),
+emissaoDaIdentidade             varchar (10),
 orgaoExpedidorDaIdentidade      varchar (50),
 idade                           int (2),
 religiao                        varchar (50),
@@ -27,18 +25,18 @@ rua						        varchar (50),
 bairro					        varchar (50),
 cidade					        varchar (50),
 estado					        varchar (2),
-ensinoMedioSuperior             varchar (20),
-anoDeConclusaoEscola            varchar (10),
-escolaOndeConcluiu            varchar (50),
+grauDeFormacao                  varchar (20),
+anoDeConclusao                  varchar (10),
+nomeDaEscola                    varchar (50),
 profissaoDoPai                  varchar (50),
 profissaoDaMae                  varchar (50),
-rendaFamiliar                   int (5)
+rendaFamiliar                   int (5),
+nomeDaTurma 					varchar(50),
+professor						varchar(50)
 );
 
 create table class(
-idClass			int not null auto_increment primary key,
+id					int not null auto_increment primary key,
 nome   		        varchar (50),   
 professor   		varchar (50)
 );
-
-select * from class;
