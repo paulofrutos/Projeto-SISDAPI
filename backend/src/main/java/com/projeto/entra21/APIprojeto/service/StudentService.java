@@ -56,6 +56,8 @@ public class StudentService {
         studentUpdated.setProfissaoDoPai(student.getProfissaoDoPai());
         studentUpdated.setProfissaoDaMae(student.getProfissaoDaMae());
         studentUpdated.setRendaFamiliar(student.getRendaFamiliar());
+        studentUpdated.setNomeDaTurma(student.getNomeDaTurma());
+        studentUpdated.setProfessor(student.getProfessor());
         repository.save(studentUpdated);
     }
 

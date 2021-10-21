@@ -100,4 +100,10 @@ public class Student {
 
     @Column
     private int rendaFamiliar;
+
+    @Column
+    private String nomeDaTurma;
+
+    @Column
+    private String professor;
 }
